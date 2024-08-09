@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+       thead th{
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+        }
+        tbody th{
+            background-color: rgb(47, 47, 250);
+            color: white;
+        }
+        .c1{
+            background-color: gold;
+        }
+        tr:nth-child(even){
+            background-color: rgb(190, 188, 188);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            2019 fourth quarter report
+        </caption>
+        <thead>
+            <tr>
+                <th>
+                    <!-- space  -->
+                </th>
+                <th>october</th>
+                <th>november</th>
+                <th>december</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>projected</th>
+                <td>$820180</td>
+                <td>$841640</td>
+                <td>$841640</td>
+            </tr>
+            <tr>
+                <th>actual</th>
+                <td>$820180</td>
+                <td>$841640</td>
+                <td>$841640</td>
+            </tr>
+            <tr>
+                <th>utilization</th>
+                <td>83%</td>
+                <td class="c1">90%</td>
+                <td>75%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
