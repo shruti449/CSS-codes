@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            gap: 20px;
+            width: 340px;
+            /* background-color: aqua; */
+        }
+        .items{
+            background-color:crimson;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #a{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #b{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #c{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #f{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="parent">
+
+        <div id="a" class="items" id="child">A</div>
+        <div id="b" class="items" id="child">B</div>
+        <div id="c" class="items" id="child">C</div>
+        <div class="items" id="child">D</div>
+        <div class="items" id="child">E</div>
+        <div id="f" class="items" id="child">F</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            width: 97vw;
+            height: 97vh;
+            gap: 5px;
+            grid-template-columns:20% 65% 15% ;
+            grid-template-rows: 12% 76% 12%;
+            grid-gap: 5px;
+            margin: 5px;
+        }
+        .child{
+            background-color: gold;
+        }
+        #a1{
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+
+        #a5{
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" class="container">
+        <div id="a1" class="child">header</div>
+        <div id="a2" class="child">nav</div>
+        <div id="a3" class="child">article</div>
+        <div id="a4" class="child">ads</div>
+        <div id="a5" class="child">footer</div>
+    </div>
+    
+</body>
+</html>
