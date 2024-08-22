@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        .container {
+            width: 800px;
+            display: flex;
+            background-color: goldenrod;
+            flex-wrap: wrap;
+        }
+
+        .items {
+            background-color: darkseagreen;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 22px;
+            border-color: chartreuse;
+        }
+
+        .a {
+            flex-basis: 100px;
+        }
+
+        .b {
+            flex-basis: 200px;
+        }
+
+        .c {
+            flex-basis: 300px;
+        }
+
+        .x {
+            /* flex-grow: 1; */
+            flex-grow: 2;
+        }
+
+        .y {
+            flex-grow: 1;
+        }
+
+        .z {
+            flex-grow: 1;
+        }
+
+        .p {
+            flex-shrink: 1;
+        }
+
+        .q {
+            flex-shrink: 2;
+        }
+
+        .r {
+            flex-shrink: 1;
+        }
+
+        .i {
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+
+        .j {
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+
+        .k {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+        .wrapper {
+            width: 300px;
+            display: flex;
+            background-color: aquamarine;
+        }
+
+        .box{
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+    </style>
+    7
+</head>
+
+<body>
+    <h1>Flex demo for flex items properties</h1>
+    <h2>flex-basis property</h2>
+    <div class="container">
+        <div class="items a">1</div>
+        <div class="items b">2</div>
+        <div class="items c">3</div>
+    </div>
+    <h2>flex-grow property</h2>
+    <div class="container">
+        <div class="items x">1</div>
+        <div class="items y">2</div>
+        <div class="items z">3</div>
+    </div>
+    <h2>flex-shrink property</h2>
+    <div class="container">
+        <div class="items p">1</div>
+        <div class="items q">2</div>
+        <div class="items r">3</div>
+    </div>
+    <h2>flex-grow with flex-basis property</h2>
+    <div class="container">
+        <div class="items i">1</div>
+        <div class="items j">2</div>
+        <div class="items k">3</div>
+    </div>
+    <h2>flex-shrink with flex-basis property</h2>
+    <div class="wrapper">
+        <div class="items box l">1</div>
+        <div class="items box m">2</div>
+        <div class="items box n">3</div>
+    </div>
+</body>
+
+</html>
