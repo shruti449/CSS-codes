@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(220, 214, 214);
+            flex-basis: 5px;
+        
+        }
+        #i1{
+            width: 100vw;
+            flex-grow: 1;
+        }
+        #i2{
+         flex-grow: 1;
+           
+        }
+        #i3{
+           
+            flex-grow: 2;
+        }
+        .items{
+            display: flex;
+           margin: 5px;
+           flex-basis: 5px;
+        }
+        button{
+            width: 100px;
+           
+           
+        }
+        #d1{
+            display: flex;
+            justify-content: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="items">
+        <span>name</span>
+        <input id="i1" type="text">
+      </div>
+      <div class="items">
+        <span>town where u born in</span>
+        <input id="i2" type="text">
+      </div>
+      <div class="items">
+        <span>email address</span>
+        <input id="i3" type="text">
+      </div>
+   <div id="d1">
+    <button class="items">submit</button>
+   </div>
+    </div>
+</body>
+</html>
